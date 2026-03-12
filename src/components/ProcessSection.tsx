@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Échange & Brief", desc: "On discute de votre projet, vos objectifs et votre vision." },
-  { num: "02", title: "Design & Prototype", desc: "Je crée un prototype interactif que vous pouvez tester immédiatement." },
-  { num: "03", title: "Développement", desc: "Construction rapide avec Lovable : votre app prend vie en quelques jours." },
-  { num: "04", title: "Livraison & Support", desc: "Mise en ligne, formation et accompagnement pour votre lancement." },
+  { num: "01", title: "Échange & Brief", desc: "On discute de votre activité, vos objectifs et le message que votre site doit transmettre." },
+  { num: "02", title: "Maquette & Design", desc: "Je crée un design sur-mesure qui reflète votre identité visuelle et séduit vos visiteurs." },
+  { num: "03", title: "Intégration", desc: "Votre site prend vie en quelques jours grâce à Lovable : responsive, rapide et optimisé." },
+  { num: "04", title: "Livraison & Mise en ligne", desc: "Votre site est en ligne, prêt à accueillir vos visiteurs. Je vous accompagne pour la suite." },
 ];
 
 const ProcessSection = () => {
@@ -21,7 +21,7 @@ const ProcessSection = () => {
             Un process <span className="text-gradient">simple & efficace</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            De l'idée au lancement, en un temps record.
+            De votre brief à la mise en ligne, en un temps record.
           </p>
         </motion.div>
 
