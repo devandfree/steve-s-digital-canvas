@@ -44,7 +44,7 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Je suis <strong className="text-foreground">Steve EMANE</strong>, je crée des sites web vitrine et des landing pages qui captent l'attention et convertissent vos visiteurs en clients — grâce à Lovable.
+            Je crée des sites web vitrine et des landing pages qui captent l'attention et convertissent vos visiteurs en clients — grâce à Lovable.
           </motion.p>
 
           <motion.div
