@@ -13,10 +13,10 @@ const CTASection = () => {
           className="max-w-3xl mx-auto text-center glass rounded-3xl p-12 md:p-16 glow-primary"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Prêt à <span className="text-gradient">concrétiser</span> votre idée ?
+            Prêt à avoir un site qui <span className="text-gradient">vous ressemble</span> ?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
-            Réservez un appel gratuit de 30 minutes. On parle de votre projet, sans engagement.
+            Réservez un appel gratuit de 30 minutes. On parle de votre site vitrine ou landing page, sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-base px-8 py-6">

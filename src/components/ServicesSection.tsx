@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { Zap, Palette, Rocket, Shield } from "lucide-react";
+import { Globe, Palette, Gauge, Search } from "lucide-react";
 
 const services = [
   {
-    icon: Zap,
-    title: "Développement ultra-rapide",
-    description: "Grâce à Lovable, je livre votre MVP en quelques jours, pas en quelques mois. Allez vite sur le marché.",
+    icon: Globe,
+    title: "Sites web vitrine",
+    description: "Un site élégant qui reflète votre image de marque et inspire confiance à vos visiteurs dès la première seconde.",
   },
   {
     icon: Palette,
-    title: "Design sur-mesure",
-    description: "Des interfaces modernes, intuitives et qui convertissent. Chaque pixel est pensé pour vos utilisateurs.",
+    title: "Landing pages qui convertissent",
+    description: "Des pages d'atterrissage optimisées pour transformer vos visiteurs en prospects et clients qualifiés.",
   },
   {
-    icon: Rocket,
-    title: "Applications complètes",
-    description: "Du site vitrine à la SaaS complexe : authentification, base de données, paiements — tout est inclus.",
+    icon: Gauge,
+    title: "Rapidité de livraison",
+    description: "Grâce à Lovable, votre site est prêt en quelques jours — pas en quelques semaines. Gagnez du temps, passez à l'action.",
   },
   {
-    icon: Shield,
-    title: "Code propre & scalable",
-    description: "Un code source que vous possédez, maintenable et prêt à évoluer avec votre business.",
+    icon: Search,
+    title: "SEO & Performance",
+    description: "Des sites rapides, optimisés pour Google et pensés pour générer du trafic qualifié et des résultats concrets.",
   },
 ];
 
@@ -38,7 +38,7 @@ const ServicesSection = () => {
             Pourquoi <span className="text-gradient">travailler avec moi</span> ?
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            L'expertise Lovable au service de votre vision produit.
+            Des sites web sur-mesure, livrés rapidement, qui font la différence.
           </p>
         </motion.div>
 

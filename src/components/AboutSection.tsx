@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
-import { Code2, Lightbulb, Target, Heart } from "lucide-react";
+import { Lightbulb, Brush, Target, Heart } from "lucide-react";
 import stevePhoto from "@/assets/steve-emane.webp";
 
 const highlights = [
   {
     icon: Lightbulb,
-    label: "Vision produit",
-    description: "Je traduis vos idées en solutions concrètes",
+    label: "Vision créative",
+    description: "Un design pensé pour votre audience cible",
   },
   {
-    icon: Code2,
-    label: "Expertise technique",
-    description: "Maîtrise avancée de Lovable et des outils no-code",
+    icon: Brush,
+    label: "Spécialiste Lovable",
+    description: "Maîtrise avancée de la plateforme n°1 de création web IA",
   },
   {
     icon: Target,
-    label: "Résultats mesurables",
-    description: "Des apps qui atteignent vos objectifs business",
+    label: "Sites qui convertissent",
+    description: "Chaque page est conçue pour générer des résultats",
   },
   {
     icon: Heart,
-    label: "Accompagnement humain",
-    description: "Une collaboration transparente et bienveillante",
+    label: "Accompagnement dédié",
+    description: "Un suivi personnalisé du brief à la mise en ligne",
   },
 ];
 
@@ -41,12 +41,11 @@ const AboutSection = () => {
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] lg:aspect-square">
               <img
                 src={stevePhoto}
-                alt="Steve EMANE - Product Builder & Spécialiste Lovable"
+                alt="Steve EMANE - Créateur de sites web & Spécialiste Lovable"
                 className="w-full h-full object-cover grayscale"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
-            {/* Badge flottant */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -54,8 +53,8 @@ const AboutSection = () => {
               transition={{ delay: 0.3, duration: 0.4 }}
               className="absolute -bottom-4 -right-4 lg:bottom-8 lg:-right-8 glass rounded-2xl p-4 shadow-xl"
             >
-              <div className="text-3xl font-bold text-gradient">3+</div>
-              <div className="text-sm text-muted-foreground">années d'expertise</div>
+              <div className="text-3xl font-bold text-gradient">50+</div>
+              <div className="text-sm text-muted-foreground">sites web livrés</div>
             </motion.div>
           </motion.div>
 
@@ -73,22 +72,21 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
-              <span className="text-foreground/80">votre Product Builder</span>
+              <span className="text-foreground/80">créateur de sites web</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed mb-8">
               <p>
-                Product Builder passionné, j'ai choisi de me spécialiser sur <strong className="text-foreground">Lovable</strong> pour offrir à mes clients la meilleure expérience de création digitale.
+                Spécialiste <strong className="text-foreground">Lovable</strong>, je conçois des sites web vitrine et des landing pages qui marquent les esprits et génèrent des résultats concrets pour votre activité.
               </p>
               <p>
-                Mon approche ? Combiner la puissance de l'IA avec une vision produit affûtée pour livrer des applications qui dépassent vos attentes — en un temps record.
+                Mon approche ? Allier un design moderne et percutant à une stratégie de conversion efficace — le tout livré en un temps record grâce à la puissance de l'IA.
               </p>
               <p>
-                Chaque projet est une nouvelle aventure. Je m'investis pleinement pour comprendre vos enjeux, vos utilisateurs et créer un produit qui vous ressemble vraiment.
+                Que vous soyez entrepreneur, freelance ou entreprise, je m'investis pour créer un site qui reflète vraiment votre identité et parle à vos clients.
               </p>
             </div>
 
-            {/* Highlights grid */}
             <div className="grid grid-cols-2 gap-4">
               {highlights.map((item, i) => (
                 <motion.div

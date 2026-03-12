@@ -27,15 +27,15 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 mb-8"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Product Builder · Spécialiste Lovable</span>
+            <span className="text-sm font-medium text-muted-foreground">Créateur de sites web · Spécialiste Lovable</span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-6">
-            <span className="text-foreground">Votre idée.</span>
+            <span className="text-foreground">Votre vitrine.</span>
             <br />
-            <span className="text-gradient">Mon expertise.</span>
+            <span className="text-gradient">Mon savoir-faire.</span>
             <br />
-            <span className="text-foreground">Votre app.</span>
+            <span className="text-foreground">Votre succès.</span>
           </h1>
 
           <motion.p
@@ -44,7 +44,7 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Je suis <strong className="text-foreground">Steve EMANE</strong>, je transforme vos idées en produits digitaux performants grâce à Lovable — la plateforme qui révolutionne la création d'applications.
+            Je suis <strong className="text-foreground">Steve EMANE</strong>, je crée des sites web vitrine et des landing pages qui captent l'attention et convertissent vos visiteurs en clients — grâce à Lovable.
           </motion.p>
 
           <motion.div
@@ -71,9 +71,9 @@ const HeroSection = () => {
           className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-20"
         >
           {[
-            { value: "50+", label: "Projets livrés" },
+            { value: "50+", label: "Sites livrés" },
             { value: "100%", label: "Clients satisfaits" },
-            { value: "2x", label: "Plus rapide" },
+            { value: "48h", label: "Délai moyen" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
