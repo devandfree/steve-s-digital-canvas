@@ -4,23 +4,23 @@ import { Globe, Palette, Gauge, Search } from "lucide-react";
 const services = [
   {
     icon: Globe,
-    title: "Sites web vitrine",
-    description: "Un site élégant qui reflète votre image de marque et inspire confiance à vos visiteurs dès la première seconde.",
+    title: "Sites web vitrine premium",
+    description: "Des sites élégants conçus avec Lovable qui reflètent votre marque et inspirent confiance dès le premier regard.",
   },
   {
     icon: Palette,
-    title: "Landing pages qui convertissent",
-    description: "Des pages d'atterrissage optimisées pour transformer vos visiteurs en prospects et clients qualifiés.",
+    title: "Landing pages haute conversion",
+    description: "Des pages stratégiques optimisées pour transformer chaque visiteur en prospect qualifié grâce à un design pensé pour convertir.",
   },
   {
     icon: Gauge,
-    title: "Rapidité de livraison",
-    description: "Grâce à Lovable, votre site est prêt en quelques jours — pas en quelques semaines. Gagnez du temps, passez à l'action.",
+    title: "Livraison express avec Lovable",
+    description: "Ma maîtrise experte de Lovable me permet de livrer votre site en 48h — là où d'autres mettent des semaines.",
   },
   {
     icon: Search,
-    title: "SEO & Performance",
-    description: "Des sites rapides, optimisés pour Google et pensés pour générer du trafic qualifié et des résultats concrets.",
+    title: "SEO & Performance intégrés",
+    description: "Chaque site est optimisé pour Google dès sa conception : vitesse, structure, et bonnes pratiques SEO incluses.",
   },
 ];
 
@@ -35,10 +35,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Pourquoi <span className="text-gradient">travailler avec moi</span> ?
+            Pourquoi choisir un <span className="text-gradient">Expert Lovable</span> ?
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Des sites web sur-mesure, livrés rapidement, qui font la différence.
+            Une expertise unique de la plateforme pour des résultats exceptionnels.
           </p>
         </motion.div>
 

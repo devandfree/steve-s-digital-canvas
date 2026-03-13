@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="border-t border-border py-10">
       <div className="container px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-muted-foreground">
-          © 2026 Steve EMANE · Créateur de sites web vitrine & landing pages
+          © 2026 Steve EMANE · Expert Lovable · Sites web vitrine & landing pages
         </p>
         <div className="flex gap-6">
           <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
