@@ -72,18 +72,18 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
-              <span className="text-foreground/80">créateur de sites web</span>
+              <span className="text-foreground/80">Expert Lovable</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed mb-8">
               <p>
-                Spécialiste <strong className="text-foreground">Lovable</strong>, je conçois des sites web vitrine et des landing pages qui marquent les esprits et génèrent des résultats concrets pour votre activité.
+                <strong className="text-foreground">Expert Lovable</strong>, je maîtrise la plateforme IA la plus puissante du marché pour concevoir des sites web vitrine et des landing pages qui impressionnent et convertissent.
               </p>
               <p>
-                Mon approche ? Allier un design moderne et percutant à une stratégie de conversion efficace — le tout livré en un temps record grâce à la puissance de l'IA.
+                Là où d'autres mettent des semaines, je livre en quelques jours des sites professionnels, performants et optimisés — en exploitant tout le potentiel de Lovable.
               </p>
               <p>
-                Que vous soyez entrepreneur, freelance ou entreprise, je m'investis pour créer un site qui reflète vraiment votre identité et parle à vos clients.
+                Entrepreneurs, freelances, PME : je transforme votre vision en une vitrine digitale qui attire, rassure et convertit vos visiteurs en clients.
               </p>
             </div>
 

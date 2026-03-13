@@ -35,10 +35,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Pourquoi <span className="text-gradient">travailler avec moi</span> ?
+            Pourquoi choisir un <span className="text-gradient">Expert Lovable</span> ?
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Des sites web sur-mesure, livrés rapidement, qui font la différence.
+            Une expertise unique de la plateforme pour des résultats exceptionnels.
           </p>
         </motion.div>
 

@@ -31,9 +31,9 @@ const HeroSection = () => {
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-6">
-            <span className="text-foreground">Votre vitrine.</span>
+            <span className="text-foreground">Votre vision.</span>
             <br />
-            <span className="text-gradient">Mon savoir-faire.</span>
+            <span className="text-gradient">Mon expertise Lovable.</span>
             <br />
             <span className="text-foreground">Votre succès.</span>
           </h1>

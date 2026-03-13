@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "01", title: "Échange & Brief", desc: "On discute de votre activité, vos objectifs et le message que votre site doit transmettre." },
-  { num: "02", title: "Maquette & Design", desc: "Je crée un design sur-mesure qui reflète votre identité visuelle et séduit vos visiteurs." },
-  { num: "03", title: "Intégration", desc: "Votre site prend vie en quelques jours grâce à Lovable : responsive, rapide et optimisé." },
-  { num: "04", title: "Livraison & Mise en ligne", desc: "Votre site est en ligne, prêt à accueillir vos visiteurs. Je vous accompagne pour la suite." },
+  { num: "01", title: "Échange & Brief", desc: "On définit ensemble vos objectifs, votre audience et le message clé de votre site vitrine ou landing page." },
+  { num: "02", title: "Design sur-mesure", desc: "Je conçois un design unique et percutant qui reflète votre identité et capte l'attention de vos visiteurs." },
+  { num: "03", title: "Développement Lovable", desc: "Grâce à mon expertise Lovable, votre site prend vie en un temps record : responsive, rapide et pixel-perfect." },
+  { num: "04", title: "Livraison & Lancement", desc: "Votre site est en ligne et prêt à convertir. Je vous accompagne aussi après la mise en ligne." },
 ];
 
 const ProcessSection = () => {
