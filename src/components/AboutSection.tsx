@@ -5,23 +5,23 @@ import stevePhoto from "@/assets/steve-emane.webp";
 const highlights = [
   {
     icon: Lightbulb,
-    label: "Vision créative",
-    description: "Un design pensé pour votre audience cible",
+    label: "Expert Lovable certifié",
+    description: "Maîtrise complète de la plateforme IA n°1 pour créer des sites web",
   },
   {
     icon: Brush,
-    label: "Spécialiste Lovable",
-    description: "Maîtrise avancée de la plateforme n°1 de création web IA",
+    label: "Design sur-mesure",
+    description: "Des créations uniques qui reflètent votre identité de marque",
   },
   {
     icon: Target,
-    label: "Sites qui convertissent",
-    description: "Chaque page est conçue pour générer des résultats",
+    label: "Conversion optimisée",
+    description: "Chaque élément est pensé pour transformer vos visiteurs en clients",
   },
   {
     icon: Heart,
-    label: "Accompagnement dédié",
-    description: "Un suivi personnalisé du brief à la mise en ligne",
+    label: "Accompagnement premium",
+    description: "Un suivi personnalisé du brief à la mise en ligne et au-delà",
   },
 ];
 
