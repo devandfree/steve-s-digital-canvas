@@ -27,7 +27,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 mb-8"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Créateur de sites web · Spécialiste Lovable</span>
+            <span className="text-sm font-medium text-muted-foreground">Expert Lovable · Créateur de sites web</span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-6">
