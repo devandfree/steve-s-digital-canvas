@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Zap, Globe, TrendingUp } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import stevePhoto from "@/assets/steve-emane-hero.png";
 
 const HeroSection = () => {
   const benefits = [
@@ -21,12 +22,32 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 px-6 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left — Copy */}
+        <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-8 lg:gap-12 items-center">
+          {/* Left — Photo avec fondu */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
+            className="hidden lg:flex justify-center items-center relative"
+          >
+            <div className="relative w-full max-w-[320px]">
+              {/* Gradient de fondu */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/20 to-background z-10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
+              <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
+              <img
+                src={stevePhoto}
+                alt="Steve Emane - Expert Lovable"
+                className="w-full h-auto relative z-0"
+              />
+            </div>
+          </motion.div>
+
+          {/* Center — Copy */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           >
             {/* Badge */}
             <motion.div
@@ -41,7 +62,7 @@ const HeroSection = () => {
               </span>
             </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
               <span className="text-foreground">Votre site vitrine</span>
               <br />
               <span className="text-gradient">qui convertit</span>
