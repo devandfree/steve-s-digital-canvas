@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Zap, Globe, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import stevePhoto from "@/assets/steve-emane-hero.png";
 
