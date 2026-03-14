@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Zap, Globe, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import stevePhoto from "@/assets/steve-emane-hero.png";
 
@@ -23,31 +23,11 @@ const HeroSection = () => {
 
       <div className="container relative z-10 px-6 py-24 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left — Photo avec fondu */}
+          {/* Left — Copy */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="hidden lg:flex justify-center items-center relative"
-          >
-            <div className="relative w-full max-w-[380px]">
-              {/* Gradient de fondu */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/20 to-background z-10 pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
-              <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
-              <img
-                src={stevePhoto}
-                alt="Steve Emane - Expert Lovable"
-                className="w-full h-auto relative z-0"
-              />
-            </div>
-          </motion.div>
-
-          {/* Right — Copy */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
           >
             {/* Badge */}
             <motion.div
@@ -110,6 +90,26 @@ const HeroSection = () => {
               </Button>
             </motion.div>
           </motion.div>
+
+          {/* Right — Photo avec fondu et zoom */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="hidden lg:flex justify-center items-center relative"
+          >
+            <div className="relative w-full max-w-[480px]">
+              {/* Gradient de fondu */}
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/20 to-background z-10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
+              <div className="absolute -inset-6 bg-gradient-radial from-primary/15 via-transparent to-transparent blur-3xl" />
+              <img
+                src={stevePhoto}
+                alt="Steve Emane - Expert Lovable"
+                className="w-full h-auto relative z-0 scale-110"
+              />
+            </div>
+          </motion.div>
         </div>
 
         {/* Mobile — Photo centered */}
@@ -119,12 +119,12 @@ const HeroSection = () => {
           transition={{ delay: 0.3 }}
           className="flex lg:hidden justify-center mt-12 mb-8"
         >
-          <div className="relative w-full max-w-[280px]">
+          <div className="relative w-full max-w-[320px]">
             <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
             <img
               src={stevePhoto}
               alt="Steve Emane - Expert Lovable"
-              className="w-full h-auto relative z-0"
+              className="w-full h-auto relative z-0 scale-105"
             />
           </div>
         </motion.div>
