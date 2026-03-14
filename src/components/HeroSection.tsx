@@ -22,7 +22,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 px-6 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-[1fr_1.2fr_1fr] gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left — Photo avec fondu */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="hidden lg:flex justify-center items-center relative"
           >
-            <div className="relative w-full max-w-[320px]">
+            <div className="relative w-full max-w-[380px]">
               {/* Gradient de fondu */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/20 to-background z-10 pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
@@ -43,7 +43,7 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Center — Copy */}
+          {/* Right — Copy */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -110,82 +110,23 @@ const HeroSection = () => {
               </Button>
             </motion.div>
           </motion.div>
-
-          {/* Right — Social proof cards */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="hidden lg:flex flex-col gap-5"
-          >
-            {/* Stats card */}
-            <div className="glass rounded-2xl p-6">
-              <div className="grid grid-cols-3 gap-6">
-                {[
-                  { icon: Globe, value: "50+", label: "Sites livrés" },
-                  { icon: TrendingUp, value: "3x", label: "Plus de conversions" },
-                  { icon: Zap, value: "48h", label: "Délai moyen" },
-                ].map((stat) => (
-                  <div key={stat.label} className="text-center">
-                    <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs text-muted-foreground mt-0.5">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Testimonial card */}
-            <div className="glass rounded-2xl p-6">
-              <div className="flex gap-1 mb-3">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} className="text-primary text-sm">★</span>
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed italic mb-4">
-                "Steve a transformé mon idée en un site vitrine professionnel en moins de 48h. Le résultat dépasse mes attentes — mes conversions ont doublé."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">
-                  ML
-                </div>
-                <div>
-                  <div className="text-sm font-medium text-foreground">Marie L.</div>
-                  <div className="text-xs text-muted-foreground">Fondatrice, Studio Créatif</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Trust badge */}
-            <div className="glass rounded-2xl p-4 flex items-center gap-4">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <div className="text-sm font-medium text-foreground">100% satisfaction garantie</div>
-                <div className="text-xs text-muted-foreground">Retouches illimitées jusqu'à votre validation finale</div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
-        {/* Mobile stats — visible on small screens */}
+        {/* Mobile — Photo centered */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
-          className="grid grid-cols-3 gap-6 max-w-md mx-auto mt-16 lg:hidden"
+          transition={{ delay: 0.3 }}
+          className="flex lg:hidden justify-center mt-12 mb-8"
         >
-          {[
-            { value: "50+", label: "Sites livrés" },
-            { value: "3x", label: "Plus de conversions" },
-            { value: "48h", label: "Délai moyen" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl font-bold text-gradient">{stat.value}</div>
-              <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-            </div>
-          ))}
+          <div className="relative w-full max-w-[280px]">
+            <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
+            <img
+              src={stevePhoto}
+              alt="Steve Emane - Expert Lovable"
+              className="w-full h-auto relative z-0"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
