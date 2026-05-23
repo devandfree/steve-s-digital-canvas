@@ -5,8 +5,8 @@ import stevePhoto from "@/assets/steve-emane.webp";
 const highlights = [
   {
     icon: Lightbulb,
-    label: "Expert Lovable certifié",
-    description: "Maîtrise complète de la plateforme IA n°1 pour créer des sites web",
+    label: "Expert No-Code & IA",
+    description: "Maîtrise des meilleurs outils IA pour bâtir vite, bien et sans limites",
   },
   {
     icon: Brush,
@@ -41,7 +41,7 @@ const AboutSection = () => {
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] lg:aspect-square">
               <img
                 src={stevePhoto}
-                alt="Steve EMANE - Créateur de sites web & Spécialiste Lovable"
+                alt="Steve EMANE - Expert No-Code & IA"
                 className="w-full h-full object-cover grayscale"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
@@ -72,15 +72,15 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
-              <span className="text-foreground/80">Expert Lovable</span>
+              <span className="text-foreground/80">Expert No-Code & IA</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed mb-8">
               <p>
-                <strong className="text-foreground">Expert Lovable</strong>, je maîtrise la plateforme IA la plus puissante du marché pour concevoir des sites web vitrine et des landing pages qui impressionnent et convertissent.
+                <strong className="text-foreground">Expert No-Code & IA</strong>, je combine les outils les plus puissants du marché pour concevoir des sites vitrine et des landing pages qui impressionnent et convertissent.
               </p>
               <p>
-                Là où d'autres mettent des semaines, je livre en quelques jours des sites professionnels, performants et optimisés — en exploitant tout le potentiel de Lovable.
+                Là où d'autres mettent des semaines, je livre en quelques jours des sites professionnels, performants et optimisés — grâce à une stack No-Code dopée à l'IA.
               </p>
               <p>
                 Entrepreneurs, freelances, PME : je transforme votre vision en une vitrine digitale qui attire, rassure et convertit vos visiteurs en clients.

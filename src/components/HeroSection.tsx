@@ -38,16 +38,16 @@ const HeroSection = () => {
             >
               <Zap className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Expert Lovable
+                Expert No-Code & IA
               </span>
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
-              <span className="text-foreground">Votre site vitrine</span>
+              <span className="text-foreground">Des sites web</span>
               <br />
-              <span className="text-gradient">qui convertit</span>
+              <span className="text-gradient">propulsés par l'IA</span>
               <br />
-              <span className="text-foreground">dès le premier clic.</span>
+              <span className="text-foreground">qui font vendre.</span>
             </h1>
 
             <motion.p
@@ -56,7 +56,7 @@ const HeroSection = () => {
               transition={{ delay: 0.3 }}
               className="text-base md:text-lg text-muted-foreground max-w-lg mb-6 leading-relaxed"
             >
-              Je crée des sites web vitrine et des landing pages qui captent l'attention et convertissent vos visiteurs en clients — grâce à Lovable.
+              Expert No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
             </motion.p>
 
             {/* Benefits */}
@@ -103,9 +103,9 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/20 to-background z-10 pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
               <div className="absolute -inset-6 bg-gradient-radial from-primary/15 via-transparent to-transparent blur-3xl" />
-              <img
-                src={stevePhoto}
-                alt="Steve Emane - Expert Lovable"
+            <img
+              src={stevePhoto}
+              alt="Steve Emane - Expert No-Code & IA"
                 className="w-full h-auto relative z-0 scale-110"
               />
             </div>
@@ -123,7 +123,7 @@ const HeroSection = () => {
             <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
             <img
               src={stevePhoto}
-              alt="Steve Emane - Expert Lovable"
+              alt="Steve Emane - Expert No-Code & IA"
               className="w-full h-auto relative z-0 scale-105"
             />
           </div>

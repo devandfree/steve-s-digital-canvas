@@ -5,7 +5,7 @@ const services = [
   {
     icon: Globe,
     title: "Sites web vitrine premium",
-    description: "Des sites élégants conçus avec Lovable qui reflètent votre marque et inspirent confiance dès le premier regard.",
+    description: "Des sites élégants conçus avec les meilleurs outils No-Code & IA, qui reflètent votre marque et inspirent confiance dès le premier regard.",
   },
   {
     icon: Palette,
@@ -14,8 +14,8 @@ const services = [
   },
   {
     icon: Gauge,
-    title: "Livraison express avec Lovable",
-    description: "Ma maîtrise experte de Lovable me permet de livrer votre site en 48h — là où d'autres mettent des semaines.",
+    title: "Livraison express grâce à l'IA",
+    description: "Ma stack No-Code dopée à l'IA me permet de livrer votre site en 48h — là où d'autres mettent des semaines.",
   },
   {
     icon: Search,
@@ -35,10 +35,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Pourquoi choisir un <span className="text-gradient">Expert Lovable</span> ?
+            Pourquoi choisir un <span className="text-gradient">Expert No-Code & IA</span> ?
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Une expertise unique de la plateforme pour des résultats exceptionnels.
+            Une expertise pointue des meilleurs outils pour des résultats exceptionnels.
           </p>
         </motion.div>
 
