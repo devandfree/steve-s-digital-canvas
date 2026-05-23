@@ -16,7 +16,7 @@ const CTASection = () => {
             Prêt à avoir un site qui <span className="text-gradient">convertit vraiment</span> ?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
-            Réservez un appel gratuit de 30 minutes avec un Expert Lovable. On parle de votre projet, sans engagement.
+            Réservez un appel gratuit de 30 minutes avec un Expert No-Code & IA. On parle de votre projet, sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-base px-8 py-6">

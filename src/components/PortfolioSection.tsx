@@ -88,8 +88,8 @@ const PortfolioSection = () => {
             <span className="text-gradient">convertissent</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Chaque projet est conçu avec Lovable pour maximiser l'impact visuel
-            et le taux de conversion de mes clients.
+            Chaque projet est conçu avec une stack No-Code & IA pour maximiser
+            l'impact visuel et le taux de conversion de mes clients.
           </p>
         </motion.div>
 
