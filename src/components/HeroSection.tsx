@@ -1,134 +1,139 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-import stevePhoto from "@/assets/steve-emane-hero.png";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
-  const benefits = [
-    "Livré en 48h",
-    "Optimisé conversion",
-    "100% responsive",
-  ];
-
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80" />
-        <div className="absolute top-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-primary/8 blur-[120px]" />
-        <div className="absolute bottom-1/4 -left-32 w-[400px] h-[400px] rounded-full bg-accent/6 blur-[100px]" />
+    <section className="relative min-h-screen w-full bg-background flex items-center overflow-hidden">
+      {/* Background grid + depth */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary/5" />
       </div>
 
-      <div className="container relative z-10 px-6 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left — Copy */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+      {/* AI logic structure — right side */}
+      <div className="absolute right-[-5%] top-1/2 -translate-y-1/2 w-[700px] h-[700px] z-0 hidden lg:block pointer-events-none">
+        <div className="relative w-full h-full flex items-center justify-center">
+          <svg
+            className="absolute inset-0 w-full h-full opacity-40"
+            viewBox="0 0 400 400"
+            fill="none"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15 }}
-              className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6"
-            >
-              <Zap className="w-3.5 h-3.5 text-primary" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Expert No-Code & IA
-              </span>
-            </motion.div>
+            <path
+              d="M100 200 L180 120 M100 200 L180 280 M180 120 L300 120 M180 280 L300 280 M300 120 L350 200 M300 280 L350 200 M180 120 L180 280"
+              stroke="hsl(var(--primary))"
+              strokeWidth="0.5"
+              strokeDasharray="4 4"
+            />
+            <circle cx="100" cy="200" r="3" fill="hsl(var(--primary))" className="animate-pulse" />
+            <circle cx="180" cy="120" r="3" fill="hsl(var(--primary))" />
+            <circle cx="180" cy="280" r="3" fill="hsl(var(--primary))" />
+            <circle cx="300" cy="120" r="3" fill="hsl(var(--primary))" />
+            <circle cx="300" cy="280" r="3" fill="hsl(var(--primary))" />
+            <circle cx="350" cy="200" r="4" fill="hsl(var(--primary))" />
+          </svg>
 
-            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
-              <span className="text-foreground">Des sites web</span>
-              <br />
-              <span className="text-gradient">propulsés par l'IA</span>
-              <br />
-              <span className="text-foreground">qui font vendre.</span>
-            </h1>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-base md:text-lg text-muted-foreground max-w-lg mb-6 leading-relaxed"
-            >
-              Expert No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
-            </motion.p>
-
-            {/* Benefits */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="flex flex-wrap gap-3 mb-8"
-            >
-              {benefits.map((b) => (
-                <div key={b} className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span>{b}</span>
-                </div>
-              ))}
-            </motion.div>
-
-            {/* CTAs */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-3"
-            >
-              <Button variant="hero" size="lg" className="text-base px-8 py-6">
-                Discutons de votre projet
-                <ArrowRight className="w-5 h-5 ml-1" />
-              </Button>
-              <Button variant="heroOutline" size="lg" className="text-base px-8 py-6">
-                Voir mes réalisations
-              </Button>
-            </motion.div>
-          </motion.div>
-
-          {/* Right — Photo avec fondu et zoom */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="hidden lg:flex justify-center items-center relative"
-          >
-            <div className="relative w-full max-w-[480px]">
-              {/* Gradient de fondu */}
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/20 to-background z-10 pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
-              <div className="absolute -inset-6 bg-gradient-radial from-primary/15 via-transparent to-transparent blur-3xl" />
-            <img
-              src={stevePhoto}
-              alt="Steve Emane - Expert No-Code & IA"
-                className="w-full h-auto relative z-0 scale-110"
-              />
+          <div className="absolute w-full h-full">
+            <div className="absolute top-[20%] right-[30%] p-4 bg-foreground/[0.02] border border-border rounded-xl backdrop-blur-sm animate-bounce [animation-duration:8s]">
+              <div className="w-8 h-1 bg-primary/50 rounded-full mb-2" />
+              <div className="w-12 h-1 bg-foreground/10 rounded-full" />
             </div>
-          </motion.div>
-        </div>
+            <div className="absolute bottom-[25%] right-[45%] p-3 bg-foreground/[0.02] border border-border rounded-lg backdrop-blur-sm animate-bounce [animation-duration:6s]">
+              <div className="flex gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <div className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+              </div>
+            </div>
+          </div>
 
-        {/* Mobile — Photo centered */}
+          <div className="absolute w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] mix-blend-screen" />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10 py-24 lg:py-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="flex lg:hidden justify-center mt-12 mb-8"
+          transition={{ duration: 0.7 }}
+          className="max-w-4xl"
         >
-          <div className="relative w-full max-w-[320px]">
-            <div className="absolute -inset-4 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-2xl" />
-            <img
-              src={stevePhoto}
-              alt="Steve Emane - Expert No-Code & IA"
-              className="w-full h-auto relative z-0 scale-105"
-            />
+          {/* Badge */}
+          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-foreground/[0.03] border border-border mb-10 transition-colors hover:border-primary/30">
+            <div className="relative">
+              <span className="block w-2 h-2 rounded-full bg-primary animate-ping absolute inset-0" />
+              <span className="relative block w-2 h-2 rounded-full bg-primary" />
+            </div>
+            <span className="text-[11px] font-bold tracking-[0.15em] text-foreground/90 uppercase">
+              Expert No-Code & IA
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.95] mb-8">
+            <span className="text-foreground">Des sites web</span>
+            <br />
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[size:200%_auto]"
+              style={{ animation: "gradient-x 4s linear infinite" }}
+            >
+              propulsés par l'IA
+            </span>
+            <br />
+            <span className="text-foreground">qui font vendre.</span>
+          </h1>
+
+          {/* Subline */}
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-12 font-medium">
+            Expert No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
+          </p>
+
+          {/* Stats / Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 max-w-2xl">
+            <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
+              <div className="text-primary font-bold text-lg mb-1">48h</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Déploiement rapide</div>
+            </div>
+            <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
+              <div className="text-primary font-bold text-lg mb-1">+40%</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Conversion</div>
+            </div>
+            <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
+              <div className="text-primary font-bold text-lg mb-1">100%</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Responsive</div>
+            </div>
+          </div>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <Button variant="hero" size="lg" className="text-base px-8 py-6 group">
+              Discutons de votre projet
+              <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <a
+              href="#portfolio"
+              className="inline-flex items-center gap-2 text-foreground/70 font-bold transition-colors hover:text-foreground group"
+            >
+              Voir mes réalisations
+              <span className="w-1 h-1 rounded-full bg-primary group-hover:w-6 transition-all duration-300" />
+            </a>
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        @keyframes gradient-x {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </section>
   );
 };
