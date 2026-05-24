@@ -77,16 +77,21 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter leading-[1.05] sm:leading-[0.95] mb-5 sm:mb-6 px-2">
-            <span className="text-foreground">Des sites web</span>
-            <br />
             <span
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[size:200%_auto]"
               style={{ animation: "gradient-x 4s linear infinite" }}
             >
-              propulsés par l'IA
+              800 $
             </span>
+            <span className="text-foreground"> pour un site web</span>
             <br />
-            <span className="text-foreground">qui font vendre.</span>
+            <span className="text-foreground">qui convertit et</span>{" "}
+            <span
+              className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[size:200%_auto]"
+              style={{ animation: "gradient-x 4s linear infinite" }}
+            >
+              fait vendre.
+            </span>
           </h1>
 
           {/* Subline */}
