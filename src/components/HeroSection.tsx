@@ -112,9 +112,11 @@ const HeroSection = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
-            <Button variant="hero" size="lg" className="text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 group w-full sm:w-auto">
-              Discutons de votre projet
-              <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+            <Button asChild variant="hero" size="lg" className="text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 group w-full sm:w-auto">
+              <a href="#contact">
+                Discutons de votre projet
+                <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <a
               href="#portfolio"
