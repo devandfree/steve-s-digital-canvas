@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full bg-background flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-full bg-background flex items-center justify-center overflow-hidden px-4 sm:px-6">
       {/* Background grid + depth */}
       <div className="absolute inset-0 z-0">
         <div
@@ -57,26 +57,26 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 py-20 lg:py-28">
+      <div className="container mx-auto px-0 sm:px-6 relative z-10 py-16 sm:py-20 lg:py-28">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="max-w-3xl mx-auto text-center flex flex-col items-center"
+          className="max-w-3xl mx-auto text-center flex flex-col items-center w-full"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-foreground/[0.03] border border-border mb-8 transition-colors hover:border-primary/30">
+          <div className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-foreground/[0.03] border border-border mb-6 sm:mb-8 transition-colors hover:border-primary/30">
             <div className="relative">
               <span className="block w-2 h-2 rounded-full bg-primary animate-ping absolute inset-0" />
               <span className="relative block w-2 h-2 rounded-full bg-primary" />
             </div>
-            <span className="text-[11px] font-bold tracking-[0.15em] text-foreground/90 uppercase">
+            <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-foreground/90 uppercase">
               Expert No-Code & IA
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter leading-[0.95] mb-6">
+          <h1 className="text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter leading-[1.05] sm:leading-[0.95] mb-5 sm:mb-6 px-2">
             <span className="text-foreground">Des sites web</span>
             <br />
             <span
@@ -90,29 +90,29 @@ const HeroSection = () => {
           </h1>
 
           {/* Subline */}
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-10 font-medium">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8 sm:mb-10 font-medium px-2">
             Expert No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
           </p>
 
           {/* Stats / Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-2xl w-full">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8 sm:mb-10 max-w-2xl w-full">
             <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
-              <div className="text-primary font-bold text-lg mb-1">48h</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Déploiement rapide</div>
+              <div className="text-primary font-bold text-base sm:text-lg mb-1">48h</div>
+              <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider">Déploiement</div>
             </div>
             <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
-              <div className="text-primary font-bold text-lg mb-1">+40%</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Conversion</div>
+              <div className="text-primary font-bold text-base sm:text-lg mb-1">+40%</div>
+              <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider">Conversion</div>
             </div>
             <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
-              <div className="text-primary font-bold text-lg mb-1">100%</div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Responsive</div>
+              <div className="text-primary font-bold text-base sm:text-lg mb-1">100%</div>
+              <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider">Responsive</div>
             </div>
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button variant="hero" size="lg" className="text-base px-8 py-6 group">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full">
+            <Button variant="hero" size="lg" className="text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 group w-full sm:w-auto">
               Discutons de votre projet
               <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
             </Button>
