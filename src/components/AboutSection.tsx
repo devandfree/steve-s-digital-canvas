@@ -53,7 +53,7 @@ const AboutSection = () => {
               transition={{ delay: 0.3, duration: 0.4 }}
               className="absolute -bottom-4 -right-4 lg:bottom-8 lg:-right-8 glass rounded-2xl p-4 shadow-xl"
             >
-              <div className="text-3xl font-bold text-gradient">50+</div>
+              <div className="text-3xl font-bold text-gradient">10+</div>
               <div className="text-sm text-muted-foreground">sites web livrés</div>
             </motion.div>
           </motion.div>
