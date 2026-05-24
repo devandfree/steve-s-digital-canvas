@@ -17,8 +17,8 @@ const Navbar = () => {
           <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
           <a href="#portfolio" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Portfolio</a>
           <a href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Process</a>
-          <Button size="sm" className="text-sm px-4 py-2">
-            Discuter de mon projet
+          <Button asChild size="sm" className="text-sm px-4 py-2">
+            <a href="#contact">Discuter de mon projet</a>
           </Button>
         </div>
       </div>
