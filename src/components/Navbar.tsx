@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="container px-4 sm:px-6 h-16 flex items-center justify-between">
         <a href="/" className="text-lg sm:text-xl font-display font-bold text-gradient">
-          Steve EMANE
+          semane.
         </a>
 
         {/* Desktop */}
