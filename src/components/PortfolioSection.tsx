@@ -8,8 +8,15 @@ import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
 import portfolio6 from "@/assets/portfolio-6.jpg";
+import portfolioSemane from "@/assets/portfolio-semane.png";
 
 const projects = [
+  {
+    image: portfolioSemane,
+    title: "semane. — Expert No-Code & IA",
+    category: "Site vitrine",
+    description: "Ce site même : landing page sombre et conversion-first pour mes services de création de sites vitrine.",
+  },
   {
     image: portfolio1,
     title: "Restaurant Gastronomique",
