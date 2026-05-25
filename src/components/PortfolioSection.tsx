@@ -72,22 +72,22 @@ const PortfolioSection = () => {
     (current + offset + projects.length) % projects.length;
 
   return (
-    <section className="py-24 overflow-hidden">
-      <div className="container px-6">
+    <section className="py-16 sm:py-24 overflow-hidden">
+      <div className="container px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
           <span className="text-sm font-semibold text-primary tracking-wider uppercase">
             Portfolio
           </span>
-          <h2 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mt-3 mb-4">
             Des sites qui{" "}
             <span className="text-gradient">convertissent</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-2">
             Chaque projet est conçu avec une stack No-Code & IA pour maximiser
             l'impact visuel et le taux de conversion de mes clients.
           </p>

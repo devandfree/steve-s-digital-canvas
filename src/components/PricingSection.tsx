@@ -54,13 +54,13 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section className="py-24 relative">
-      <div className="container px-6">
+    <section className="py-16 sm:py-24 relative">
+      <div className="container px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-foreground/[0.03] border border-border mb-5">
             <span className="w-2 h-2 rounded-full bg-primary" />
@@ -68,15 +68,15 @@ const PricingSection = () => {
               Tarifs transparents
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Des sites à partir de <span className="text-gradient">800 $</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Choisissez la formule qui correspond à votre ambition. Sans surprise, sans frais cachés.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -84,7 +84,7 @@ const PricingSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`relative rounded-2xl p-8 flex flex-col transition-all duration-300 ${
+              className={`relative rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ${
                 plan.highlight
                   ? "border-2 border-primary/50 bg-foreground/[0.02] glow-primary"
                   : "glass hover:border-primary/30"

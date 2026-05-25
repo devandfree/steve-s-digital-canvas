@@ -9,18 +9,18 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-24 relative">
-      <div className="container px-6">
+    <section className="py-16 sm:py-24 relative">
+      <div className="container px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Un process <span className="text-gradient">simple & efficace</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             De votre brief à la mise en ligne, en un temps record.
           </p>
         </motion.div>
@@ -33,12 +33,12 @@ const ProcessSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="flex gap-6 items-start glass rounded-2xl p-6 hover:border-primary/30 transition-all"
+              className="flex gap-4 sm:gap-6 items-start glass rounded-2xl p-5 sm:p-6 hover:border-primary/30 transition-all"
             >
-              <span className="text-4xl font-bold text-gradient shrink-0">{step.num}</span>
+              <span className="text-3xl sm:text-4xl font-bold text-gradient shrink-0">{step.num}</span>
               <div>
-                <h3 className="text-xl font-semibold text-foreground mb-1">{step.title}</h3>
-                <p className="text-muted-foreground">{step.desc}</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-1">{step.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">{step.desc}</p>
               </div>
             </motion.div>
           ))}

@@ -27,9 +27,9 @@ const highlights = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative">
-      <div className="container px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+    <section id="about" className="py-16 sm:py-24 relative">
+      <div className="container px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -69,13 +69,13 @@ const AboutSection = () => {
               <span className="text-sm font-medium text-primary">À propos</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
               <span className="text-foreground/80">Expert No-Code & IA</span>
             </h2>
 
-            <div className="space-y-4 text-muted-foreground text-lg leading-relaxed mb-8">
+            <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
               <p>
                 <strong className="text-foreground">Expert No-Code & IA</strong>, je combine les outils les plus puissants du marché pour concevoir des sites vitrine et des landing pages qui impressionnent et convertissent.
               </p>
