@@ -54,7 +54,7 @@ const AboutSection = () => {
               className="absolute -bottom-4 -right-4 lg:bottom-8 lg:-right-8 glass rounded-2xl p-4 shadow-xl"
             >
               <div className="text-3xl font-bold text-gradient">10+</div>
-              <div className="text-sm text-muted-foreground">sites web livrés</div>
+              <div className="text-sm text-muted-foreground">sites web réalisés</div>
             </motion.div>
           </motion.div>
 
