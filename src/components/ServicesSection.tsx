@@ -26,18 +26,18 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-24 relative">
-      <div className="container px-6">
+    <section className="py-16 sm:py-24 relative">
+      <div className="container px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Pourquoi choisir un <span className="text-gradient">Expert No-Code & IA</span> ?
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Une expertise pointue des meilleurs outils pour des résultats exceptionnels.
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 group"
+              className="glass rounded-2xl p-6 sm:p-8 hover:border-primary/30 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <service.icon className="w-6 h-6 text-primary" />
