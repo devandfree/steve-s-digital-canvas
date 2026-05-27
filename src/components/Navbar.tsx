@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/semane-logo.svg";
 
 const links = [
   { href: "#about", label: "À propos" },
@@ -21,8 +22,8 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 glass"
     >
       <div className="container px-4 sm:px-6 h-16 flex items-center justify-between">
-        <a href="/" className="text-lg sm:text-xl font-display font-bold text-gradient">
-          semane.
+        <a href="/" aria-label="semane." className="flex items-center">
+          <img src={logo} alt="semane." className="h-7 sm:h-8 w-auto" />
         </a>
 
         {/* Desktop */}
