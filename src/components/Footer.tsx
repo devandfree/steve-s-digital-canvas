@@ -9,6 +9,7 @@ const Footer = () => {
           <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
           <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
           <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Email</a>
+          <a href="https://wa.me/237622186389" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">WhatsApp</a>
         </div>
       </div>
     </footer>

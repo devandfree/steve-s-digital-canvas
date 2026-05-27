@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -26,9 +27,9 @@ const CTASection = () => {
               </a>
             </Button>
             <Button asChild variant="heroOutline" size="lg" className="text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
-              <a href="mailto:contact@steveemane.com">
-                Me contacter
-                <ArrowRight className="w-5 h-5 ml-1" />
+              <a href="https://wa.me/237622186389" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp
               </a>
             </Button>
           </div>
