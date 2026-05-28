@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Palette, Gauge, Search } from "lucide-react";
+import { Globe, Palette, Gauge, Search, Workflow } from "lucide-react";
 
 const services = [
   {
@@ -21,6 +21,14 @@ const services = [
     icon: Search,
     title: "SEO & Performance intégrés",
     description: "Chaque site est optimisé pour Google dès sa conception : vitesse, structure, et bonnes pratiques SEO incluses.",
+  },
+];
+
+const upcomingServices = [
+  {
+    icon: Workflow,
+    title: "Optimisation & Automatisation des Workflows",
+    description: "Bientôt disponible : automatisez vos tâches répétitives et fluidifiez vos process grâce à des workflows intelligents propulsés par l'IA et le No-Code.",
   },
 ];
 
@@ -52,6 +60,28 @@ const ServicesSection = () => {
               transition={{ delay: i * 0.1 }}
               className="glass rounded-2xl p-6 sm:p-8 hover:border-primary/30 transition-all duration-300 group"
             >
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto mt-6">
+          {upcomingServices.map((service, i) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="glass rounded-2xl p-6 sm:p-8 border-dashed border-primary/30 hover:border-primary/50 transition-all duration-300 group relative overflow-hidden"
+            >
+              <span className="absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/30">
+                Bientôt
+              </span>
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>
