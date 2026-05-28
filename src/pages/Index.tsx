@@ -13,22 +13,22 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <div id="about">
+      <div id="about" className="scroll-mt-16">
         <AboutSection />
       </div>
-      <div id="services">
+      <div id="services" className="scroll-mt-16">
         <ServicesSection />
       </div>
-      <div id="portfolio">
+      <div id="portfolio" className="scroll-mt-16">
         <PortfolioSection />
       </div>
-      <div id="process">
+      <div id="process" className="scroll-mt-16">
         <ProcessSection />
       </div>
-      <div id="pricing">
+      <div id="pricing" className="scroll-mt-16">
         <PricingSection />
       </div>
-      <div id="contact">
+      <div id="contact" className="scroll-mt-16">
         <CTASection />
       </div>
       <Footer />
