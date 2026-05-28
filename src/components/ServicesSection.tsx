@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Palette, Gauge, Search, Workflow } from "lucide-react";
+import { Globe, Palette, Gauge, Search, Workflow, GraduationCap } from "lucide-react";
 
 const services = [
   {
@@ -29,6 +29,11 @@ const upcomingServices = [
     icon: Workflow,
     title: "Optimisation & Automatisation des Workflows",
     description: "Bientôt disponible : automatisez vos tâches répétitives et fluidifiez vos process grâce à des workflows intelligents propulsés par l'IA et le No-Code.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Formation",
+    description: "Bientôt disponible : montez en compétences sur le No-Code & l'IA grâce à des formations pratiques pour créer, automatiser et lancer vos projets en toute autonomie.",
   },
 ];
 
@@ -69,7 +74,7 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-1 gap-6 max-w-4xl mx-auto mt-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6">
           {upcomingServices.map((service, i) => (
             <motion.div
               key={service.title}
