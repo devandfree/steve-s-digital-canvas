@@ -107,7 +107,7 @@ const PortfolioSection = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Main carousel area */}
-          <div className="relative flex items-center justify-center h-[420px] md:h-[520px]">
+          <div className="relative flex items-center justify-center h-[240px] sm:h-[360px] md:h-[520px]">
             {/* Previous slide (left) */}
             <div className="hidden md:block absolute left-0 w-[28%] z-10 opacity-40 scale-90 transition-all duration-700 ease-in-out blur-[1px]">
               <img

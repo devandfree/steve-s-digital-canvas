@@ -36,9 +36,9 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
+            className="relative mx-2 sm:mx-0"
           >
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] lg:aspect-square">
+            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] lg:aspect-square max-w-md mx-auto lg:max-w-none">
               <img
                 src={stevePhoto}
                 alt="Steve EMANE - Expert No-Code & IA"
@@ -51,7 +51,7 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="absolute -bottom-4 -right-4 lg:bottom-8 lg:-right-8 glass rounded-2xl p-4 shadow-xl"
+              className="absolute bottom-4 right-4 lg:bottom-8 lg:-right-8 glass rounded-2xl p-3 sm:p-4 shadow-xl"
             >
               <div className="text-3xl font-bold text-gradient">10+</div>
               <div className="text-sm text-muted-foreground">sites web réalisés</div>
