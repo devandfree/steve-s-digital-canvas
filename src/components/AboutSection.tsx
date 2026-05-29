@@ -70,7 +70,7 @@ const AboutSection = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Je suis <span className="text-gradient">Steve EMANE</span>
+              Je suis <span className="text-gradient">Steve</span>
               <br />
               <span className="text-foreground/80">No-Code & AI Developper</span>
             </h2>
