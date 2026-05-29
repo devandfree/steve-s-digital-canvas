@@ -72,12 +72,12 @@ const AboutSection = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
-              <span className="text-foreground/80">Développeur No-Code & IA</span>
+              <span className="text-foreground/80">Dév No-Code & IA</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
               <p>
-                <strong className="text-foreground">Développeur No-Code & IA</strong>, je combine les outils les plus puissants du marché pour concevoir des sites vitrine et des landing pages qui impressionnent et convertissent.
+                Je combine les outils les plus puissants du marché pour concevoir des sites vitrine et des landing pages qui impressionnent et convertissent.
               </p>
               <p>
                 Là où d'autres mettent des semaines, je livre en quelques jours des sites professionnels, performants et optimisés — grâce à une stack No-Code dopée à l'IA.
