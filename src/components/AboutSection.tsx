@@ -71,7 +71,7 @@ const AboutSection = () => {
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               <span className="text-gradient">Steve EMANE</span>
-              <span className="text-foreground/80">, No-Code & AI Developper</span>
+              <span className="text-foreground/80">, No-Code & AI Developer</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
