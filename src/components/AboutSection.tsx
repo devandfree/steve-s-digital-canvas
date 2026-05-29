@@ -72,7 +72,7 @@ const AboutSection = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Je suis <span className="text-gradient">Steve EMANE</span>
               <br />
-              <span className="text-foreground/80">Dév No-Code & IA</span>
+              <span className="text-foreground/80">No-Code & AI Developper</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
