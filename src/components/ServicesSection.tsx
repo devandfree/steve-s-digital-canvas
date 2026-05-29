@@ -48,7 +48,7 @@ const ServicesSection = () => {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Pourquoi choisir un <span className="text-gradient">Expert No-Code & IA</span> ?
+            Pourquoi choisir un <span className="text-gradient">Développeur No-Code & IA</span> ?
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Une expertise pointue des meilleurs outils pour des résultats exceptionnels.
