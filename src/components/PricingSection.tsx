@@ -69,7 +69,7 @@ const PricingSection = () => {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Des sites à partir de <span className="text-gradient">250 $</span>
+            Des sites à partir de <span className="text-gradient">250$</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Choisissez la formule qui correspond à votre ambition. Sans surprise, sans frais cachés.
