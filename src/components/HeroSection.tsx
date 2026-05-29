@@ -102,7 +102,7 @@ const HeroSection = () => {
           {/* Stats / Features */}
           <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8 sm:mb-10 max-w-2xl w-full">
             <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
-              <div className="text-primary font-bold text-base sm:text-lg mb-1">72h</div>
+              <div className="text-primary font-bold text-base sm:text-lg mb-1">48h</div>
               <div className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider">Déploiement</div>
             </div>
             <div className="p-4 rounded-2xl border border-border bg-foreground/[0.01] hover:bg-foreground/[0.03] transition-all">
