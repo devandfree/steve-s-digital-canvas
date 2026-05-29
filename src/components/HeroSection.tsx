@@ -81,7 +81,7 @@ const HeroSection = () => {
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[size:200%_auto]"
               style={{ animation: "gradient-x 4s linear infinite" }}
             >
-              250 $
+              250$
             </span>
             <span className="text-foreground"> pour un site web</span>
             <br />
