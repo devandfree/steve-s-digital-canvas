@@ -5,7 +5,7 @@ import { Check, ArrowRight } from "lucide-react";
 const plans = [
   {
     name: "Essentiel",
-    price: "800",
+    price: "250",
     tagline: "Landing page haute conversion",
     description: "Idéal pour lancer rapidement une offre, un produit ou un événement.",
     features: [
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: "Professionnel",
-    price: "1 500",
+    price: "800",
     tagline: "Site vitrine multi-pages",
     description: "Pour les entreprises qui veulent une présence web complète et crédible.",
     features: [

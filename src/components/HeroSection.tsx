@@ -71,7 +71,7 @@ const HeroSection = () => {
               <span className="relative block w-2 h-2 rounded-full bg-primary" />
             </div>
             <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.12em] sm:tracking-[0.15em] text-foreground/90 uppercase">
-              Expert No-Code & IA
+              Développeur No-Code & IA
             </span>
           </div>
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary bg-[size:200%_auto]"
               style={{ animation: "gradient-x 4s linear infinite" }}
             >
-              800 $
+              250 $
             </span>
             <span className="text-foreground"> pour un site web</span>
             <br />
@@ -96,7 +96,7 @@ const HeroSection = () => {
 
           {/* Subline */}
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8 sm:mb-10 font-medium px-2">
-            Expert No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
+            Développeur No-Code & IA, je conçois des sites vitrine et des landing pages haute conversion — livrés en quelques jours, sans compromis sur le design ni la performance.
           </p>
 
           {/* Stats / Features */}
