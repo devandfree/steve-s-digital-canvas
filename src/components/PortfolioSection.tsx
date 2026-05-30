@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 
 import portfolio1 from "@/assets/portfolio-kyros.png";
-import portfolio2 from "@/assets/portfolio-2.jpg";
+import portfolio2 from "@/assets/portfolio-sem.png";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
 import portfolio5 from "@/assets/portfolio-5.jpg";
@@ -25,9 +25,9 @@ const projects = [
   },
   {
     image: portfolio2,
-    title: "Agence Immobilière Premium",
+    title: "Consultant indépendant",
     category: "Site vitrine",
-    description: "Vitrine élégante avec catalogue de biens et formulaire de contact.",
+    description: "Vitrine élégante avec blog.",
   },
   {
     image: portfolio3,
