@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio1 from "@/assets/portfolio-kyros.png";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 import portfolio4 from "@/assets/portfolio-4.jpg";
@@ -19,9 +19,9 @@ const projects = [
   },
   {
     image: portfolio1,
-    title: "Restaurant Gastronomique",
+    title: "Cabinet Etudes & Conseils",
     category: "Site vitrine",
-    description: "Landing page immersive avec réservation en ligne et menu interactif.",
+    description: "Site web vitrnine pour un cabinet.",
   },
   {
     image: portfolio2,
